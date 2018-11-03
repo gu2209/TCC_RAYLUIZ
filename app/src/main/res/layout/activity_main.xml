@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000"
+    tools:context="MainActivity">
+
+    <Button
+        android:id="@+id/btnConexao"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_blue_bright"
+        android:text="Conectar"
+        android:textSize="30sp"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_Sky"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/sky"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btn_Tv"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:background="#ffff"
+        android:text="TV"
+        android:textSize="35sp"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btn_Quarto"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/quarto"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_Sala"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/sala"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_Led4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Led 4"
+        android:background="#0f08e6"
+        android:textAllCaps="false" />
+
+</LinearLayout>

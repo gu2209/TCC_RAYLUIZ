@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+tools:context=".SalaActivity">
+
+    <ImageButton
+        android:id="@+id/btn_SalaSala"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="74dp"
+        android:background="@drawable/lampadaoff"  />
+
+    <TextView
+        android:id="@+id/text_Sala_Sala"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="17dp"
+        android:text="Sala"
+        android:textSize="40sp" />
+
+    <ImageButton
+        android:id="@+id/btn_SalaCorredor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="194dp"
+        android:layout_marginTop="74dp"
+        android:background="@drawable/lampadaoff" />
+
+    <TextView
+        android:id="@+id/text_Sala_Corredor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="185dp"
+        android:layout_marginTop="17dp"
+        android:text="Corredor"
+        android:textSize="40sp" />
+
+    <ImageButton
+        android:id="@+id/btn_SalaVenezianaPC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="134dp"
+        android:layout_marginBottom="150dp"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/seta_cima" />
+
+    <ImageButton
+        android:id="@+id/btn_SalaVenezianaPB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/btn_SalaVenezianaPC"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="52dp"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/seta_baixo" />
+
+    <TextView
+        android:id="@+id/text_Sala_Veneziana"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Veneziana"
+        android:textSize="40sp" />
+
+
+</RelativeLayout>

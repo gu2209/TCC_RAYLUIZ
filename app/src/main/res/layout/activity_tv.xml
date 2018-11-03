@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TvActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/btn_TvOn"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="27dp"
+                android:background="@android:color/transparent"
+                app:srcCompat="@drawable/on" />
+
+            <ImageButton
+                android:id="@+id/btn_TvGuia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="23dp"
+                android:background="@android:color/transparent"
+                app:srcCompat="@drawable/guia" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/btn_TvOff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="0dp"
+                android:layout_toEndOf="@+id/btn_TvInfo"
+                android:background="@android:color/transparent"
+                app:srcCompat="@drawable/off" />
+
+            <ImageButton
+                android:id="@+id/btn_TvVoltar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="7dp"
+                android:layout_toStartOf="@+id/btn_TvCima"
+                android:background="@android:color/transparent"
+                app:srcCompat="@drawable/voltar" />
+
+            <ImageButton
+                android:id="@+id/btn_TvCima"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:background="@android:color/transparent"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/cima" />
+
+            <ImageButton
+                android:id="@+id/btn_TvDireita"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_TvCima"
+                android:layout_toEndOf="@+id/btn_TvCima"
+                android:background="@android:color/transparent"
+                app:srcCompat="@drawable/direita" />
+
+            <ImageButton
+                android:id="@+id/btn_TvBaixo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_TvDireita"
+                android:layout_centerHorizontal="true"
+                android:background="@android:color/transparent"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/baixo" />
+
+            <ImageButton
+                android:id="@+id/btn_TvEsquerda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_TvCima"
+                android:layout_alignStart="@+id/btn_TvVoltar"
+                android:background="@android:color/transparent"
+                app:srcCompat="@drawable/esquerda" />
+
+            <ImageButton
+                android:id="@+id/btn_TvSair"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="116dp"
+                android:background="@android:color/transparent"
+                app:srcCompat="@drawable/sair" />
+
+            <ImageButton
+                android:id="@+id/btn_TvVermelho"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_toStartOf="@+id/btn_TvVerde"
+                android:background="@android:color/transparent"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/vermelho" />
+
+            <ImageButton
+                android:id="@+id/btn_TvVerde"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_toStartOf="@+id/btn_TvAmarelo"
+                android:background="@android:color/transparent"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/verde"
+                tools:ignore="RtlHardcoded" />
+
+            <ImageButton
+                android:id="@+id/btn_TvAmarelo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_toStartOf="@+id/btn_TvAzul"
+                android:background="@android:color/transparent"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/amarelo" />
+
+            <ImageButton
+                android:id="@+id/btn_TvAzul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_toEndOf="@+id/btn_TvDireita"
+                android:background="@android:color/transparent"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/azul" />
+
+            <ImageButton
+                android:id="@+id/btn_TvInfo"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="-116dp"
+                android:layout_toEndOf="@+id/btn_TvSair"
+                android:background="@android:color/holo_blue_light"
+                app:srcCompat="@android:drawable/ic_menu_info_details" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/btn_TvCh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/btn_TvVol"
+                android:layout_alignEnd="@+id/btn_TvChMenos"
+                android:background="@drawable/ch" />
+
+            <ImageButton
+                android:id="@+id/btn_TvChMenos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="35dp"
+                android:background="@android:color/transparent"
+                app:srcCompat="@drawable/menos" />
+
+            <ImageView
+                android:id="@+id/btn_TvVol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/btn_TvVolMenos"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="43dp"
+                android:background="@drawable/vol" />
+
+            <ImageButton
+                android:id="@+id/btn_TvVolMenos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/btn_TvVolMais"
+                android:layout_alignTop="@+id/btn_TvChMenos"
+                android:background="@android:color/transparent"
+                app:srcCompat="@drawable/menos" />
+
+            <ImageButton
+                android:id="@+id/btn_TvVolMais"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/btn_TvVol"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="58dp"
+                android:background="@android:color/transparent"
+                app:srcCompat="@drawable/mais" />
+
+            <ImageButton
+                android:id="@+id/btn_TvChMais"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/btn_TvCh"
+                android:layout_alignStart="@+id/btn_TvChMenos"
+                android:background="@android:color/transparent"
+                app:srcCompat="@drawable/mais" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/btn_TvUm"
+                android:layout_width="@android:dimen/app_icon_size"
+                android:layout_height="@android:dimen/app_icon_size"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="118dp"
+                android:background="@android:color/transparent"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/um" />
+
+            <ImageButton
+                android:id="@+id/btn_TvDois"
+                android:layout_width="@android:dimen/app_icon_size"
+                android:layout_height="@android:dimen/app_icon_size"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/btn_TvUm"
+                android:background="@android:color/transparent"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/dois" />
+
+            <ImageButton
+                android:id="@+id/btn_TvTres"
+                android:layout_width="@android:dimen/app_icon_size"
+                android:layout_height="@android:dimen/app_icon_size"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/btn_TvDois"
+                android:background="@android:color/transparent"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/tres" />
+
+            <ImageButton
+                android:id="@+id/btn_TvQuatro"
+                android:layout_width="@android:dimen/app_icon_size"
+                android:layout_height="@android:dimen/app_icon_size"
+                android:layout_alignStart="@+id/btn_TvUm"
+                android:layout_below="@+id/btn_TvUm"
+                android:background="@android:color/transparent"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/quatro" />
+
+            <ImageButton
+                android:id="@+id/btn_TvCinco"
+                android:layout_width="@android:dimen/app_icon_size"
+                android:layout_height="@android:dimen/app_icon_size"
+                android:layout_below="@+id/btn_TvUm"
+                android:layout_toEndOf="@+id/btn_TvUm"
+                android:background="@android:color/transparent"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/cinco" />
+
+            <ImageButton
+                android:id="@+id/btn_TvSeis"
+                android:layout_width="@android:dimen/app_icon_size"
+                android:layout_height="@android:dimen/app_icon_size"
+                android:layout_below="@+id/btn_TvUm"
+                android:layout_toEndOf="@+id/btn_TvDois"
+                android:background="@android:color/transparent"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/seis" />
+
+            <ImageButton
+                android:id="@+id/btn_TvSete"
+                android:layout_width="@android:dimen/app_icon_size"
+                android:layout_height="@android:dimen/app_icon_size"
+                android:layout_alignStart="@+id/btn_TvUm"
+                android:layout_below="@+id/btn_TvQuatro"
+                android:background="@android:color/transparent"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/sete" />
+
+            <ImageButton
+                android:id="@+id/btn_TvOito"
+                android:layout_width="@android:dimen/app_icon_size"
+                android:layout_height="@android:dimen/app_icon_size"
+                android:layout_alignTop="@+id/btn_TvSete"
+                android:layout_toEndOf="@+id/btn_TvUm"
+                android:background="@android:color/transparent"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/oito" />
+
+            <ImageButton
+                android:id="@+id/btn_TvNove"
+                android:layout_width="@android:dimen/app_icon_size"
+                android:layout_height="@android:dimen/app_icon_size"
+                android:layout_alignTop="@+id/btn_TvSete"
+                android:layout_toEndOf="@+id/btn_TvDois"
+                android:background="@android:color/transparent"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/nove" />
+
+            <ImageButton
+                android:id="@+id/btn_TvZero"
+                android:layout_width="@android:dimen/app_icon_size"
+                android:layout_height="@android:dimen/app_icon_size"
+                android:layout_below="@+id/btn_TvSete"
+                android:layout_toEndOf="@+id/btn_TvUm"
+                android:background="@android:color/transparent"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/zero" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SkyActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/btn_SkyOn"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="25dp"
+                android:background="@android:color/transparent"
+                app:srcCompat="@drawable/on" />
+
+            <ImageButton
+                android:id="@+id/btn_SkyGuia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="23dp"
+                android:background="@android:color/transparent"
+                app:srcCompat="@drawable/guia" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageButton
+                android:id="@+id/btn_SkyVoltar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="7dp"
+                android:layout_toStartOf="@+id/btn_SkyCima"
+                android:background="@android:color/transparent"
+                app:srcCompat="@drawable/voltar" />
+
+            <ImageButton
+                android:id="@+id/btn_SkyCima"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:background="@android:color/transparent"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/cima" />
+
+            <ImageButton
+                android:id="@+id/btn_SkyDireita"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_SkyCima"
+                android:layout_toEndOf="@+id/btn_SkyCima"
+                android:background="@android:color/transparent"
+                app:srcCompat="@drawable/direita" />
+
+            <ImageButton
+                android:id="@+id/btn_SkyBaixo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_SkyDireita"
+                android:layout_centerHorizontal="true"
+                android:background="@android:color/transparent"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/baixo" />
+
+            <ImageButton
+                android:id="@+id/btn_SkyEsquerda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/btn_SkyVoltar"
+                android:layout_below="@+id/btn_SkyCima"
+                android:background="@android:color/transparent"
+                app:srcCompat="@drawable/esquerda" />
+
+            <ImageButton
+                android:id="@+id/btn_SkySair"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="116dp"
+                android:layout_marginTop="16dp"
+                android:background="@android:color/transparent"
+                app:srcCompat="@drawable/sair" />
+
+            <ImageButton
+                android:id="@+id/btn_SkyVermelho"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_toStartOf="@+id/btn_SkyVerde"
+                android:background="@android:color/transparent"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/vermelho" />
+
+            <ImageButton
+                android:id="@+id/btn_SkyVerde"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_toStartOf="@+id/btn_SkyAmarelo"
+                android:background="@android:color/transparent"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/verde"
+                tools:ignore="RtlHardcoded" />
+
+            <ImageButton
+                android:id="@+id/btn_SkyAmarelo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_toStartOf="@+id/btn_SkyAzul"
+                android:background="@android:color/transparent"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/amarelo" />
+
+            <ImageButton
+                android:id="@+id/btn_SkyAzul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_toEndOf="@+id/btn_SkyDireita"
+                android:background="@android:color/transparent"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/azul" />
+
+            <ImageButton
+                android:id="@+id/btn_SkyInfo"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="-116dp"
+                android:layout_toEndOf="@+id/btn_SkySair"
+                android:background="@android:color/holo_blue_light"
+                app:srcCompat="@android:drawable/ic_menu_info_details" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/btn_SkyCh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/btn_SkyVol"
+                android:layout_alignEnd="@+id/btn_SkyChMenos"
+                android:background="@drawable/ch" />
+
+            <ImageButton
+                android:id="@+id/btn_SkyChMenos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="35dp"
+                android:background="@android:color/transparent"
+                app:srcCompat="@drawable/menos" />
+
+            <ImageView
+                android:id="@+id/btn_SkyVol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/btn_SkyVolMenos"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="43dp"
+                android:background="@drawable/vol" />
+
+            <ImageButton
+                android:id="@+id/btn_SkyVolMenos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/btn_SkyVolMais"
+                android:layout_alignTop="@+id/btn_SkyChMenos"
+                android:background="@android:color/transparent"
+                app:srcCompat="@drawable/menos" />
+
+            <ImageButton
+                android:id="@+id/btn_SkyVolMais"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/btn_SkyVol"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="58dp"
+                android:background="@android:color/transparent"
+                app:srcCompat="@drawable/mais" />
+
+            <ImageButton
+                android:id="@+id/btn_SkyChMais"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/btn_SkyCh"
+                android:layout_alignStart="@+id/btn_SkyChMenos"
+                android:background="@android:color/transparent"
+                app:srcCompat="@drawable/mais" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/btn_SkyUm"
+                android:layout_width="@android:dimen/app_icon_size"
+                android:layout_height="@android:dimen/app_icon_size"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="118dp"
+                android:background="@android:color/transparent"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/um" />
+
+            <ImageButton
+                android:id="@+id/btn_SkyDois"
+                android:layout_width="@android:dimen/app_icon_size"
+                android:layout_height="@android:dimen/app_icon_size"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/btn_SkyUm"
+                android:background="@android:color/transparent"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/dois" />
+
+            <ImageButton
+                android:id="@+id/btn_SkyTres"
+                android:layout_width="@android:dimen/app_icon_size"
+                android:layout_height="@android:dimen/app_icon_size"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/btn_SkyDois"
+                android:background="@android:color/transparent"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/tres" />
+
+            <ImageButton
+                android:id="@+id/btn_SkyQuatro"
+                android:layout_width="@android:dimen/app_icon_size"
+                android:layout_height="@android:dimen/app_icon_size"
+                android:layout_alignStart="@+id/btn_SkyUm"
+                android:layout_below="@+id/btn_SkyUm"
+                android:background="@android:color/transparent"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/quatro" />
+
+            <ImageButton
+                android:id="@+id/btn_SkyCinco"
+                android:layout_width="@android:dimen/app_icon_size"
+                android:layout_height="@android:dimen/app_icon_size"
+                android:layout_below="@+id/btn_SkyUm"
+                android:layout_toEndOf="@+id/btn_SkyUm"
+                android:background="@android:color/transparent"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/cinco" />
+
+            <ImageButton
+                android:id="@+id/btn_SkySeis"
+                android:layout_width="@android:dimen/app_icon_size"
+                android:layout_height="@android:dimen/app_icon_size"
+                android:layout_below="@+id/btn_SkyUm"
+                android:layout_toEndOf="@+id/btn_SkyDois"
+                android:background="@android:color/transparent"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/seis" />
+
+            <ImageButton
+                android:id="@+id/btn_SkySete"
+                android:layout_width="@android:dimen/app_icon_size"
+                android:layout_height="@android:dimen/app_icon_size"
+                android:layout_alignStart="@+id/btn_SkyUm"
+                android:layout_below="@+id/btn_SkyQuatro"
+                android:background="@android:color/transparent"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/sete" />
+
+            <ImageButton
+                android:id="@+id/btn_SkyOito"
+                android:layout_width="@android:dimen/app_icon_size"
+                android:layout_height="@android:dimen/app_icon_size"
+                android:layout_alignTop="@+id/btn_SkySete"
+                android:layout_toEndOf="@+id/btn_SkyUm"
+                android:background="@android:color/transparent"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/oito" />
+
+            <ImageButton
+                android:id="@+id/btn_SkyNove"
+                android:layout_width="@android:dimen/app_icon_size"
+                android:layout_height="@android:dimen/app_icon_size"
+                android:layout_alignTop="@+id/btn_SkySete"
+                android:layout_toEndOf="@+id/btn_SkyDois"
+                android:background="@android:color/transparent"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/nove" />
+
+            <ImageButton
+                android:id="@+id/btn_SkyZero"
+                android:layout_width="@android:dimen/app_icon_size"
+                android:layout_height="@android:dimen/app_icon_size"
+                android:layout_below="@+id/btn_SkySete"
+                android:layout_toEndOf="@+id/btn_SkyUm"
+                android:background="@android:color/transparent"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/zero" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
